@@ -36,7 +36,6 @@ const addText10 = () =>{
 }
 
 
-
 function testFun (){
     alert("hi its me");
 }
