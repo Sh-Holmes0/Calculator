@@ -59,13 +59,21 @@ const addText17 = () => {
 const addText18 = () => {
     screen.appendChild(document.createTextNode(" )"));
 }
+const addText19 = () => {
+    try {
+        alert(eval(document.querySelector("h1").textContent));
+    }
+    catch {
+        alert("aaaaaaaaaaaaaaaaaaaaaaaaah")
+    }
+}
 function testFun() {
     // var h1Text = document.querySelector("h1").textContent;
-    alert(document.querySelector("h1").textContent);
+    alert(eval(document.querySelector("h1").textContent));
 }
 
 
-btn1[0].addEventListener("click", testFun)
+btn1[0].addEventListener("click", addText0)
 btn1[1].addEventListener("click", addText1)
 btn1[2].addEventListener("click", addText2)
 btn1[3].addEventListener("click", addText3)
@@ -84,3 +92,4 @@ btn1[15].addEventListener("click", addText15)
 btn1[16].addEventListener("click", addText16)
 btn1[17].addEventListener("click", addText17)
 btn1[18].addEventListener("click", addText18)
+btn1[19].addEventListener("click", addText19)
