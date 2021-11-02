@@ -1,6 +1,20 @@
 const btn1 = document.querySelectorAll("button")
 const screen = document.querySelector("h1")
 
+// classSelectors
+const body = document.querySelector("body")
+const mainDiv = document.querySelector("div")
+
+
+// ---------themeFunctions
+function changeTheme() {
+    body.classList.toggle('dark');
+    btn1.forEach( btn => btn.classList.toggle('btnStyleDark'));
+    mainDiv.classList.toggle('mainBodyDark');
+}
+
+
+// ---------btnsFunctions--------
 
 const addText0 = () => {
     screen.textContent = '';
@@ -68,15 +82,16 @@ const addText19 = () => {
         alert(eval(document.querySelector("h1").textContent));
     }
     catch {
-        alert("aaaaaaaaaaaaaaaaaaaaaaaaah")
+        alert("Invalid Entry")
     }
 }
 function testFun() {
     // var h1Text = document.querySelector("h1").textContent;
-    alert(eval(document.querySelector("h1").textContent));
+    // alert(eval(document.querySelector("h1").textContent));
+    alert('hi it\'s me i\'am working')
 }
 
-
+// ------------btns-----------
 btn1[0].addEventListener("click", addText0)
 btn1[1].addEventListener("click", addText1)
 btn1[2].addEventListener("click", addText2)
@@ -97,3 +112,6 @@ btn1[16].addEventListener("click", addText16)
 btn1[17].addEventListener("click", addText17)
 btn1[18].addEventListener("click", addText18)
 btn1[19].addEventListener("click", addText19)
+
+// theme btn event
+btn1[20].addEventListener("click",changeTheme)

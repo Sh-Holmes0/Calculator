@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/* another google font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap'); 
 
 /* body themes */
+
+/* ######## light ######## */
 .light{
     margin: 0;
     padding: 0;
@@ -11,6 +14,7 @@
     min-height: 100vh; 
 }
 
+/* ######## dark ######## */
 .dark{
     margin: 0;
     padding: 0;
@@ -24,6 +28,8 @@
 /*----------------------------------- calculator body----------------------------------------- */
 
 /*--------- main claculator body themes------------------ */
+
+/* ######## light ######## */
 .mainBody{
     padding: 1.5em;
     width: 30rem;
@@ -33,6 +39,8 @@
     border-radius: 5px;
     margin: 10px;
 }
+
+/* ######## dark ######## */
 .mainBodyDark{
     padding: 1.5em;
     width: 30rem;
@@ -52,6 +60,8 @@
 }
 
 /* --------btns themes--------- */
+
+/* ######## light ######## */
 .btnStyle{
     border: 0;
     height: 4rem;
@@ -66,6 +76,8 @@
     background-color: #6B7AA1;
 }
 
+
+/* ######## dark ######## */
 .btnStyleDark{
     border: 0;
     height: 4rem;
