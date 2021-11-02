@@ -3,7 +3,7 @@ const screen = document.querySelector("h1")
 
 
 const addText0 = () => {
-    screen.appendChild(document.createTextNode("C"));
+    screen.textContent = '';
 }
 const addText1 = () => {
     screen.appendChild(document.createTextNode(" / "));
@@ -12,7 +12,11 @@ const addText2 = () => {
     screen.appendChild(document.createTextNode(" * "));
 }
 const addText3 = () => {
-    screen.appendChild(document.createTextNode("del"));
+    let text = screen.textContent;
+    const textarr1 = text.split("");
+    textarr1.pop()
+    screen.textContent = textarr1.join('');
+    // screen.appendChild(document.createTextNode("del"));
 }
 const addText4 = () => {
     screen.appendChild(document.createTextNode("7"));
@@ -48,7 +52,7 @@ const addText14 = () => {
     screen.appendChild(document.createTextNode("3"));
 }
 const addText15 = () => {
-    screen.appendChild(document.createTextNode(" . "));
+    screen.appendChild(document.createTextNode("."));
 }
 const addText16 = () => {
     screen.appendChild(document.createTextNode("( "));
