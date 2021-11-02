@@ -1,4 +1,10 @@
-body{
+/* another google font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap'); 
+
+/* body themes */
+
+/* ######## light ######## */
+.light{
     margin: 0;
     padding: 0;
     background-color: #E7E0C9;
@@ -8,6 +14,22 @@ body{
     min-height: 100vh; 
 }
 
+/* ######## dark ######## */
+.dark{
+    margin: 0;
+    padding: 0;
+    background-color: #1F1D36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+/*----------------------------------- calculator body----------------------------------------- */
+
+/*--------- main claculator body themes------------------ */
+
+/* ######## light ######## */
 .mainBody{
     padding: 1.5em;
     width: 30rem;
@@ -15,15 +37,31 @@ body{
     background-color: #C1CFC0;
     justify-content: center;
     border-radius: 5px;
+    margin: 10px;
 }
 
-/*-------------- buttons---------------- */
+/* ######## dark ######## */
+.mainBodyDark{
+    padding: 1.5em;
+    width: 30rem;
+    height: 28rem;
+    background-color: #3F3351;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/*---------------------- buttons--------------------- */
 .btnContainer{
     display: grid;
     gap: .21rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 2rem;
 }
+
+/* --------btns themes--------- */
+
+/* ######## light ######## */
 .btnStyle{
     border: 0;
     height: 4rem;
@@ -36,6 +74,22 @@ body{
 
 .btnStyle:hover{
     background-color: #6B7AA1;
+}
+
+
+/* ######## dark ######## */
+.btnStyleDark{
+    border: 0;
+    height: 4rem;
+    background-color: #c97db8;
+    border-radius: 3px;
+    
+    font-family: "Zen Kurenaido";
+    font-size: 1.5rem;
+}
+
+.btnStyleDark:hover{
+    background-color: #E9A6A6;
 }
 
 .deepBlue{
@@ -53,4 +107,19 @@ h1{
     font-family: "Zen Kurenaido";
     overflow: scroll;
 }
-    
+/* ---------------button-------------- */
+.toggle{
+    background-color: tomato;
+    border: 0;
+    border-radius: 30px;
+    height: 3em;
+    width: 10em;
+    font-size: 1.2em;
+    font-family: 'Oswald', sans-serif;
+    transition: .3s ease-in-out;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.19); 
+}
+.toggle:hover{
+    transform:scale(.95);
+    background-color: rgb(231, 79, 52);
+}
